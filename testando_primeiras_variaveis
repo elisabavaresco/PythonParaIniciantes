@@ -1,0 +1,9 @@
+faturamento = 3400
+custo = 770
+
+novas_vendas = 300
+faturamento = faturamento + novas_vendas
+
+print("Faturamento", faturamento)
+print("Custo", custo)
+print("Lucro", faturamento - custo)

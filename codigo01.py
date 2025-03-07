@@ -1,2 +1,2 @@
-print ("Meu primeiro programa em python")
-print (24+5)
+print("Meu primeiro programa em python")
+print(24+5)
