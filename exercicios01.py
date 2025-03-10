@@ -24,3 +24,7 @@ print(f"Usuário {primeiro_nome} cadastrado com sucesso com o email {email}")
 numero_caracteres = len(email[1:posicao_arroba])
 email_oculto = email.replace(email[1:posicao_arroba],"*" * numero_caracteres)
 print(f"Enviamos um link de confirmação para o email {email_oculto}")
+
+# outra forma de fazer o exercicio acima
+primeira_letra = email[0]
+print(f"Enviamos um link de confirmação para o email {primeira_letra}***@{servidor}")
