@@ -40,3 +40,11 @@ print(nome_email)
 # Exemplo de pegar o servidor mas nem incluir o '@'
 servidor_sem_arroba = email[posicao+1:]
 print(servidor_sem_arroba)
+
+# Como pegar o tamanho de um texto
+tamanho = len(email)
+print(tamanho)
+
+# Como trocar um pedaço do texto
+email_trocado = email.replace("gmail.com", "hotmail.com")
+print (email_trocado)
