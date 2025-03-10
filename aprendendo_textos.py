@@ -48,3 +48,8 @@ print(tamanho)
 # Como trocar um pedaço do texto
 email_trocado = email.replace("gmail.com", "hotmail.com")
 print (email_trocado)
+
+# Exempli de edição de nome
+nome = "elisa bavaresco"
+print(nome.capitalize()) # vai deixar só a primeira letra da string maiúscula
+print(nome.title()) # vai deixar a primeira letra de cada palavra maiúscula
