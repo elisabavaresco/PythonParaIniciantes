@@ -49,7 +49,21 @@ print(tamanho)
 email_trocado = email.replace("gmail.com", "hotmail.com")
 print (email_trocado)
 
-# Exempli de edição de nome
+# Exemplo de edição de nome
 nome = "elisa bavaresco"
-print(nome.capitalize()) # vai deixar só a primeira letra da string maiúscula
-print(nome.title()) # vai deixar a primeira letra de cada palavra maiúscula
+print(nome.capitalize()) # vai deixar só a primeira letra da string maiúscula (Elisa bavaresco)
+print(nome.title()) # vai deixar a primeira letra de cada palavra maiúscula (Elisa Bavaresco)
+
+# Formatação númerica especiais
+# para adicionar casas decimais é preciso adicionar '.' para indiciar que havera casa decimal, '2' para indicar o número de casas
+# decimais requeridas e 'f' vem de float
+# Para adicionar um 'R$' ou "US$", é só adicionar junto à parte de texto
+# Para adicionar o separador de milhar, é preciso adicionar uma ',' (antes do '.' se estivar trabalhando com casas decimais)
+print(f"Faturamento: R${faturamento:,.2f}") 
+
+# Para formatar procentagem
+margem = lucro / faturamento
+print(f"Margem: {margem:.1%}")
+
+# Como separar um texto com 'enter', o caracter que representa o 'enter' ao printar é o \n
+print(f"Faturamento: {faturamento}\n Custo: {custo}\n Lucro: {lucro}")
