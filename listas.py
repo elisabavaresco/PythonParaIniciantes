@@ -33,8 +33,9 @@ precos_produtos.append(10000)
 produtos.remove("iphone") # para remover de acordo com o valor do item
 precos_produtos.pop(0) # para remover um item de acordo com a posição dele na lista
 
-# para inserir um valor em uma posição/índice específica dentro da lista
-produtos.insert(1, "airpod")
+produtos.insert(1, "airpod") # para inserir um valor em uma posição/índice específica dentro da lista
+print(produtos.count("airpod")) # para contar quantas vezes determinado valor aparece dentro de uma lista
 
-# para contar valores
-print(produtos.count("airpod"))
+# como ordernar valores dentro de uma lista (números - crescente e decrescente, texto - alfabética)
+precos_produtos.sort() # ordem crescente
+precos_produtos.sort(reverse=True) # ordem decrescente
