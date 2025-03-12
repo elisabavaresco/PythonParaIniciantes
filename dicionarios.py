@@ -6,7 +6,7 @@ produtos = ["celular", "camera", "fone de ouvido", "monitor"]
 # para criar um dicionário, é preciso cololar "{}":
 dic_precos = {"celular": 1500, "camera": 1000, "fone de ouvido": 800, "monitor": 20000}
 
-# para pegar um item do dicionário, ao invés de passar o índice você vai passar a chave do dicionário:\
+# para pegar um item do dicionário, ao invés de passar o índice você vai passar a chave do dicionário:
 preco_celular = dic_precos["celular"]
 print(preco_celular)
 
@@ -18,3 +18,15 @@ len(dic_precos) # para saber quantos itens tem dentro do dicionário
 1500 in dic_precos.values() # para verificar/ buscar pelo valor de uma chave dentro do dicionário
 dic_precos.keys() # para pegar a lista de chaves do dicionário
 dic_precos.values() # para pegar a lista de valores do dicionário
+
+# Exercicio de consulta de preço
+
+produto_buscado = input("Digite aqui o produto que gostaria de consultar: ")
+produto_buscado = produto_buscado.lower()
+
+if produto_buscado in dic_precos:
+        preco_buscado = dic_precos[produto_buscado]
+        print(f"O preço do produto buscado é R$ {preco_buscado}")
+else:
+        print("Produto não cadastrado")
+print ("Fim")
