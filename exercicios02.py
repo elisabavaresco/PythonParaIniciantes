@@ -12,7 +12,7 @@ produto_buscado = produto_buscado.lower()
 
 if produto_buscado in produtos:
         encontrar_preco = produtos.index(produto_buscado)
-        print(precos[encontrar_preco])
+        print(f"O preço do produto buscado é R$ {precos[encontrar_preco]}")
 else:
         print("Produto não cadastrado")
         print(f"Escolha um dos produtos cadastrados: {produtos}")
