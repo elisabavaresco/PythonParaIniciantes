@@ -6,10 +6,7 @@ produtos = ["celular", "camera", "fone de ouvido", "monitor"]
 # para criar um dicionário, é preciso cololar "{}":
 dic_precos = {"celular": 1500, "camera": 1000, "fone de ouvido": 800, "monitor": 20000}
 
-# para pegar um item do dicionário, ao invés de passar o índice você vai passar a chave do dicionário:
-preco_celular = dic_precos["celular"]
-print(preco_celular)
-
+preco_celular = dic_precos["celular"] # para buscar o valor de um item do dicionário, ao invés de passar o índice você vai passar a chave do dicionário:
 dic_precos["celular"] = 2000 # para editar/modificar um intem dentro do dicionario
 dic_precos["iphone"] = 4500 # para adicionar um intem ao dicionario (se ele não existir, será adicionado, se existir, será editado)
 dic_precos.pop("camera") # para deletar um item do dicionario
