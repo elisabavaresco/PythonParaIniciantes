@@ -3,7 +3,7 @@
 for i in range(10): # para executar algo X vezes
     print("Se inscreva")
 
-lista_precos = [1500, 100, 800, 2000]
+lista_precos = [1500, 1000, 800, 2000]
 
 for preco in lista_precos: #vai permitir percorrer uma lista e executar algo para cada item até ela acabar
     imposto = preco * 0.1
