@@ -45,6 +45,16 @@ vendas_23 = {"jan": 17000, "fev": 15000, "mar": 17500, "abr": 16900, "mai": 1600
 
 for mes in vendas_23.keys():
     vari_percentual = (vendas_23[mes] - vendas_22[mes]) / vendas_22[mes]
-    print(f"{vari_percentual:.2%}")
+    print(f"{mes}: {vari_percentual:.2%}")
 
 # 3.2 simule: se a empresa tivesse pelo menos empatado com 2022 nos meses que ela vendeu menos, qual teria sido o faturamento de 2023
+
+total_vendas = 0
+for mes in vendas_23.keys():
+    if vendas_23[mes] < vendas_22[mes]:
+        valor_venda = vendas_22[mes]
+    else:
+        valor_venda = vendas_23[mes]
+    total_vendas = total_vendas + valor_venda
+
+print(f"O total de vendas em 2023 foi R$ {total_vendas}")
