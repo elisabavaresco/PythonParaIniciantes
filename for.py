@@ -43,7 +43,7 @@ vendas_23 = {"jan": 17000, "fev": 15000, "mar": 17500, "abr": 16900, "mai": 1600
 
 # 3.1 saber quanto variou percentualmente cada mes de 2023 em comparacao com 2022
 
-for mes in vendas_23.keys():
+for mes in vendas_23.keys(): # estou declarando que a variável 'mes' é referente à chave do dicionário
     vari_percentual = (vendas_23[mes] - vendas_22[mes]) / vendas_22[mes]
     print(f"{mes}: {vari_percentual:.2%}")
 
