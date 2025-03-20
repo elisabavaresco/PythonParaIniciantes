@@ -43,11 +43,8 @@ vendas_23 = {"jan": 17000, "fev": 15000, "mar": 17500, "abr": 16900, "mai": 1600
 
 # 3.1 saber quanto variou percentualmente cada mes de 2023 em comparacao com 2022
 
-vari_percentual = ((vendas_23["jan"] - vendas_22["jan"])/vendas_22["jan"]) * 100
-print(vari_percentual)
-
-venda_22 = vendas_22.values()
-
-# for venda_23 in vendas_23:
+for mes in vendas_23.keys():
+    vari_percentual = (vendas_23[mes] - vendas_22[mes]) / vendas_22[mes]
+    print(f"{vari_percentual:.2%}")
 
 # 3.2 simule: se a empresa tivesse pelo menos empatado com 2022 nos meses que ela vendeu menos, qual teria sido o faturamento de 2023
