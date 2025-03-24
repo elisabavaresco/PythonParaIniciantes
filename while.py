@@ -22,3 +22,25 @@ while True: # para que o loop aconteça enquanto X for verdade
         produtos.append(novo_produto) 
 
 print(produtos) # esse só vai acontecer depois que todo o loop do while terminar
+
+
+# Criando um sistema de consulta de preço com While
+
+precos = [1500, 1000, 800, 2000]
+produtos = ["celular", "camera", "fone de ouvido", "monitor"]
+
+while True:
+    produto_buscado = input("Digite aqui o produto que gostaria de consultar: ")
+    produto_buscado = produto_buscado.lower()
+
+    if produto_buscado in produtos:
+            encontrar_preco = produtos.index(produto_buscado)
+            print(f"O preço do produto buscado é R$ {precos[encontrar_preco]}")
+            break
+    elif "sair" == produto_buscado:
+         break       
+    else:
+            print("Produto não cadastrado")
+            print(f"Escolha um dos produtos cadastrados: {produtos}")
+
+print("Fim")
