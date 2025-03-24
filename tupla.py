@@ -23,3 +23,6 @@ print(ir, csll, iss, sep="\n") # o sep="\n" é para separar os valores com um en
 # refatorando
 ir, csll, iss = calcular_imposto2(1000)
 print(ir, csll, iss, sep="\n")
+
+# também podemos criar tuplas para variáveis nas quais os valores são fixos, exemplo:
+tamanho_tela = (1920, 1080)
