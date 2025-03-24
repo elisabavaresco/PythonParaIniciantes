@@ -21,4 +21,4 @@ while True: # para que o loop aconteça enquanto X for verdade
         print(f"Produto {novo_produto} cadastrado com sucesso")
         produtos.append(novo_produto) 
 
-print(produtos)
+print(produtos) # esse só vai acontecer depois que todo o loop do while terminar
