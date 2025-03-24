@@ -15,3 +15,25 @@ for vendedor in vendedores:
     print(f"O bônus recebido pelo(a) {vendedor} foi de R${comissao_vendedor}")
     comissao_total = comissao_total + comissao_vendedor
 print(f"O bonus total pago foi R${comissao_total}")
+
+# resolução professor
+
+def calcular_bonus(lista_vendas):
+    qtde = len(lista_vendas)
+    bonus1 = qtde * 2
+    valor_total = sum(lista_vendas)
+    bonus2 = 0.01 * valor_total
+    bonus = bonus1 + bonus2
+    return bonus
+
+bonus_total = 0
+for vendedor in vendedores:
+    lista_vendas_vendedor = vendedores[vendedor]
+    bonus = calcular_bonus(lista_vendas_vendedor)
+    print(f"Vendedor: {vendedor}, Bonus: {bonus}")
+    bonus_total = bonus_total + bonus
+print(bonus_total)
+
+# for vendedor, lista_vendas_vendedor in vendas.items():
+#     print(vendedor)
+#     print(lista_vendas_vendedor)
