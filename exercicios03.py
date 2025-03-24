@@ -34,6 +34,8 @@ for vendedor in vendedores:
     bonus_total = bonus_total + bonus
 print(bonus_total)
 
-# for vendedor, lista_vendas_vendedor in vendas.items():
-#     print(vendedor)
-#     print(lista_vendas_vendedor)
+# o '.items' transforma o dicionário em uma lista de tuplas, onde o primeiro item da tupla é a chave e o segundo o valor
+# unpacking da tupla:
+for vendedor, lista_vendas_vendedor in vendedores.items(): 
+    print(vendedor)
+    print(lista_vendas_vendedor)
