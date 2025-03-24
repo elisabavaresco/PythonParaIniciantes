@@ -10,4 +10,16 @@ def calcular_imposto2(preco, ir=0.275, csll=0.035, iss=0.05):
 
 resposta = calcular_imposto2(1000)
 print(resposta)
-print(resposta[0])
+print(resposta[0]) # você consegue dessa forma 'pegar' um único valor dentro de uma tupla, assim como nas listas
+
+# unpacking uma tupla
+
+resposta = calcular_imposto2(1000) # (275.0, 35.0, 50.0
+ir, csll, iss = resposta # ao fazer isso, como a resposta é uma tupla, 
+# ele automaticamente vai atribuir o primeiro valor da tupla (275) pra primeira variável (ir), 
+# assim por diante, criando 3 variáveis de uma vez só
+print(ir, csll, iss, sep="\n") # o sep="\n" é para separar os valores com um enter
+
+# refatorando
+ir, csll, iss = calcular_imposto2(1000)
+print(ir, csll, iss, sep="\n")
