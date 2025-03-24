@@ -61,7 +61,18 @@ def calcular_imposto(preco, aliquota1=0.2, aliquota2=0.15, aliquota3=0.1): # é 
 
 for preco in lista_precos:
     imposto = calcular_imposto(preco) # se for usar só o padrão dos parâmetros, não é preciso informar o valor deles ao chamar a função, ou, se quiser alterar, basta seguir o exemplo a baixo:
-#   imposto = calcular_imposto(preco, aliquita1=0.25)
+#   imposto = calcular_imposto(preco, aliquita2=0.25)
     total_imposto = total_imposto + imposto
 
 print(total_imposto)
+
+# retornando mais de uma resposta numa função
+
+def calcular_imposto2(preco, ir=0.275, csll=0.035, iss=0.05):
+    imposto_ir = preco * ir
+    imposto_csll = preco * csll
+    imposto_iss = preco * iss
+    return imposto_ir, imposto_csll, imposto_iss
+
+resposta = calcular_imposto2(1000)
+print(resposta)
