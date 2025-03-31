@@ -25,4 +25,5 @@ for item in infos:
     valor = resultado[1] # esse cara aqui ainda está em formato de texto
     valor = float(valor) # transformando o texto em número
     vendas_totais = vendas_totais + valor
+
 print (vendas_totais)
